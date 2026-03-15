@@ -1,0 +1,9 @@
+{
+  "type": "insight_card",
+  "description": "Educational content, actionable tips, or timely information. Use for beginners to learn, or for experts to surface pending actions like expired orders or tax tips.",
+  "propsSchema": {
+    "title": "string — insight heading",
+    "content": "string — the insight text you write",
+    "category": "\"education\" | \"action\" | \"tip\""
+  }
+}

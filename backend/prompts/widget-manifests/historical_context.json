@@ -1,0 +1,10 @@
+{
+  "type": "historical_context",
+  "description": "Shows that similar market events have happened before and markets recovered. Use during high volatility or when the investor is anxious to provide perspective.",
+  "propsSchema": {
+    "event": "string — name of the historical pattern",
+    "description": "string — explanation of what's happening",
+    "recoveryMonths": "number (optional) — average months to recovery",
+    "previousOccurrences": "array of { date: string, dropPct: number, recovery: string } (optional) — past events"
+  }
+}

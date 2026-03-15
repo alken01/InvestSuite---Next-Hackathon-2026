@@ -1,0 +1,8 @@
+{
+  "type": "narrative_card",
+  "description": "A personalized message from the AI to the investor. Adapts tone to mood — calming when anxious, concise when focused, welcoming when detached. Use to set emotional context.",
+  "propsSchema": {
+    "title": "string — short heading",
+    "message": "string — the personalized message you write"
+  }
+}

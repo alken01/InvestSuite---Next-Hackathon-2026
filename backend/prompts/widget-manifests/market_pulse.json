@@ -1,0 +1,9 @@
+{
+  "type": "market_pulse",
+  "description": "Current market conditions at a glance — volatility level, summary, and sector performance. Use when market context matters for the investor's state.",
+  "propsSchema": {
+    "volatility": "\"Low\" | \"Medium\" | \"High\"",
+    "summary": "string — one-paragraph market summary you write",
+    "sectorHighlights": "array of { sector: string, changePct: number } (optional) — key sector movements"
+  }
+}
