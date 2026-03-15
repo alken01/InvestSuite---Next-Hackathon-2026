@@ -1,6 +1,6 @@
-# InvestSuite — Adaptive Investing Interface
+# InvestSuite — Hackathon Project
 
-[![CI](https://github.com/alken01/InvestSuite/actions/workflows/ci.yml/badge.svg)](https://github.com/alken01/InvestSuite/actions/workflows/ci.yml)
+[![CI](https://github.com/alken01/team-25/actions/workflows/ci.yml/badge.svg)](https://github.com/alken01/team-25/actions/workflows/ci.yml)
 
 An adaptive investing interface where the UI reshapes itself based on who you are and what's happening right now. Built for the [Next Level Challenge](https://www.nextlevelchallenge.be/).
 
@@ -13,10 +13,10 @@ An adaptive investing interface where the UI reshapes itself based on who you ar
 ## Architecture
 
 ```
-┌─────────────┐    context signals     ┌─────────────┐     prompt      ┌───────────┐
-│   Investor   │ ────────────────────► │    Brain     │ ─────────────► │  Claude    │
-│  opens app   │                       │  (ASP.NET)   │ ◄───────────── │   API      │
-└─────────────┘                       │              │   JSON response └───────────┘
+┌─────────────┐    context signals    ┌──────────────┐     prompt     ┌───────────┐
+│  Investor   │ ────────────────────► │    Brain     │ ─────────────► │  Claude   │
+│  opens app  │                       │  (ASP.NET)   │ ◄───────────── │   API     │
+└─────────────┘                       │              │  JSON response └───────────┘
                                       │  Assembles:  │
                                       │  - narrative │
                                       │  - tone      │
@@ -26,7 +26,7 @@ An adaptive investing interface where the UI reshapes itself based on who you ar
                                       └──────┬───────┘
                                              │
                                              ▼
-                                      ┌─────────────┐
+                                      ┌──────────────┐
                                       │    Face      │
                                       │  (Next.js)   │
                                       │              │
@@ -34,7 +34,7 @@ An adaptive investing interface where the UI reshapes itself based on who you ar
                                       │  whatever    │
                                       │  the brain   │
                                       │  sends.      │
-                                      └─────────────┘
+                                      └──────────────┘
 ```
 
 ## Tech Stack
